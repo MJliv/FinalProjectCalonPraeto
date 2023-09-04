@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#450C0C0C"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="46dp"
+                android:textColor="#FFEC7B7B"
+                android:fontFamily="@font/poppinsbold"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppinsregule"
+                android:hint="Username"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <EditText
+                android:fontFamily="@font/poppinsregule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_email2"
+                android:hint="Email"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:fontFamily="@font/poppinsregule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pass2"
+                android:hint="Password"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="12sp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:id="@+id/et_confpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppinsregule"
+                android:hint="Confirm Password"
+                android:padding="12dp"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="20dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#EC7B7B"
+                android:fontFamily="@font/poppinssemibold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinsregule"/>
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Sign In"
+                    android:textColor="#EC7B7B"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+

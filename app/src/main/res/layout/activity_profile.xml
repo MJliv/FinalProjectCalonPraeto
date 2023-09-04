@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="@drawable/linearbg">
+    
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="28dp"
+        android:text="Hello!"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:fontFamily="@font/poppinsregule"
+        android:textStyle="bold"
+        android:id="@+id/tv_name"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_email"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsregule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppinsbold"
+        android:backgroundTint="#6A6969"
+        android:text="BACK"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="LOG OUT"
+        android:fontFamily="@font/poppinsbold"
+        android:backgroundTint="#A52424"/>
+
+</LinearLayout>
